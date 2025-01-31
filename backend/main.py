@@ -10,7 +10,7 @@ def get_contacts():
     return jsonify({"contacts": json_contacts})
 
 
-@app.route("/create_contact", methods=["POST"]
+@app.route("/create_contact", methods=["POST"])
 def create_contact():
     first name = request.json.get("firstName")
     last name = request.json.get("lastName")
